@@ -1,0 +1,18 @@
+body {
+  background-color: #fbafa6;
+  color: black;
+  font-family: "FranklinGothicCondensed", Impact, Helvetica, Arial, san-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.no-scroll {
+    height: 100vh;
+    overflow-y: hidden;
+    position: fixed;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

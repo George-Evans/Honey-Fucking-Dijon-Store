@@ -1,0 +1,59 @@
+.StoreDropdown {
+  .btn {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    padding: 16px 16px 12px 16px;
+  }
+  .btn-primary {
+    color: #ffcfd0;
+    background-color: black !important;
+    box-shadow: none !important;
+
+    &.dropdown-toggle:after {
+      border-right: 4px solid;
+      border-bottom: 4px solid;
+      border-left: none;
+      border-top: none;
+      transform: rotate(45deg);
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      transition: transform 0.2s, top 0.15s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+
+  &.show > .btn-primary.dropdown-toggle {
+    color: #ffcfd0;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:after {
+      transform: rotate(225deg);
+      top: 20px;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: #ffcfd0;
+    border-radius: 0;
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .dropdown-item {
+    color: black;
+
+    &:hover {
+      background-color: #fbafa6;
+    }
+  }
+}
