@@ -52,7 +52,7 @@ function MobileNav({ navItemClickHandler }) {
           </h2>
           <ul>
             <li onClick={() => onNavItemClick(tees)}>FUCKING T-SHIRTS</li>
-            <li onClick={() => onNavItemClick(sweats)}>FUCKING T-SWEATS</li>
+            <li onClick={() => onNavItemClick(sweats)}>FUCKING SWEATS</li>
             <li onClick={() => onNavItemClick(hoodies)}>FUCKING T-HOODIES</li>
             <li onClick={() => onNavItemClick(otherShit)}>
               FUCKING OTHER SHIT

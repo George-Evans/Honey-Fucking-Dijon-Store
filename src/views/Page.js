@@ -37,7 +37,7 @@ function App() {
             <ul>
               <li onClick={() => setVisbleProducts(tees)}>FUCKING T-SHIRTS</li>
               <li onClick={() => setVisbleProducts(sweats)}>
-                FUCKING T-SWEATS
+                FUCKING SWEATS
               </li>
               <li onClick={() => setVisbleProducts(hoodies)}>
                 FUCKING HOODIES
