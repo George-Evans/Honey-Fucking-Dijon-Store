@@ -33,23 +33,23 @@ body {
 
 h1,
 h2 {
-  padding-top: 100px;
-  margin-bottom: 60px;
-  font-size: 24vw;
+  padding-top: 60px;
+  margin-bottom: 30px;
+  font-size: 21vw;
   line-height: 0.75em;
   letter-spacing: -0.02em;
 
   @include media-breakpoint-up(lg) {
     text-align: center;
-    font-size: 100px;
+    font-size: 85px;
   }
 
   @include media-breakpoint-up(xl) {
-    font-size: 120px;
+    font-size: 102px;
   }
 
   @include media-breakpoint-up(xxl) {
-    font-size: 140px;
+    font-size: 120px;
   }
 }
 

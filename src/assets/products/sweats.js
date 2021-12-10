@@ -1,61 +1,23 @@
 export const sweats = [
   {
-    id: "HFD04J001",
-    img: "images/sweat.jpg",
-    buyInStore: true,
+    id: "HFD04N001_BLACK_1",
+    img: "images/HFD04N001_BLACK_1.jpg",
+    buyInStore: false,
     links: [
       {
-        store: "london",
-        src: "https://shop.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/hfd-slogan-cotton-tshirt-knit-purp-hfd04t003-aw21",
-      },
-      {
-        store: "new york",
-        src: "https://shop-us.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/honey-fucking-dijon-coloured-slogan-cotton-tshirt-na-hfd04t003",
+        store: "London",
+        src: "https://shop.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/hfd-slogan-wool-knits-blk-blu-hfd04n001-aw21",
       },
     ],
   },
   {
-    id: "HFD04J001",
-    img: "images/sweat.jpg",
+    id: "HFD04N001_ORANGE",
+    img: "images/HFD04N001_ORANGE.jpg",
     buyInStore: false,
     links: [
       {
         store: "london",
-        src: "https://shop.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/hfd-slogan-cotton-tshirt-knit-purp-hfd04t003-aw21",
-      },
-      {
-        store: "new york",
-        src: "https://shop-us.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/honey-fucking-dijon-coloured-slogan-cotton-tshirt-na-hfd04t003",
-      },
-    ],
-  },
-  {
-    id: "HFD04J001",
-    img: "images/sweat.jpg",
-    buyInStore: true,
-    links: [
-      {
-        store: "london",
-        src: "https://shop.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/hfd-slogan-cotton-tshirt-knit-purp-hfd04t003-aw21",
-      },
-      {
-        store: "milan",
-        src: "https://shop-us.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/honey-fucking-dijon-coloured-slogan-cotton-tshirt-na-hfd04t003",
-      },
-    ],
-  },
-  {
-    id: "HFD04J001",
-    img: "images/sweat.jpg",
-    buyInStore: false,
-    links: [
-      {
-        store: "london",
-        src: "https://shop.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/hfd-slogan-cotton-tshirt-knit-purp-hfd04t003-aw21",
-      },
-      {
-        store: "new york",
-        src: "https://shop-us.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/honey-fucking-dijon-coloured-slogan-cotton-tshirt-na-hfd04t003",
+        src: "https://shop.doverstreetmarket.com/collections/shops-honey-fucking-dijon/products/hfd-slogan-wool-knits-orange-hfd04n001-aw21",
       },
     ],
   },

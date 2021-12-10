@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Page.scss";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -7,7 +7,8 @@ import Product from "../components/Product/Product";
 import {
   tees,
   sweats,
-  hoodies,
+  jackets,
+  jewellery,
   otherShit,
   allProducts,
 } from "../assets/products";
@@ -16,16 +17,29 @@ import MobileNav from "../components/MobileNav/MobileNav";
 
 function App() {
   const [visibleProducts, setVisbleProducts] = useState(allProducts);
+  const [greenTheme, setGreenTheme] = useState(false);
+  const logoFillLight = greenTheme ? "#ebf5db" : "#FFCFD0";
+  const logoFillDark = greenTheme ? "#6be6a9" : "#fbafa6";
 
   function navItemClickHandler(productsToShow) {
     setVisbleProducts(productsToShow);
   }
 
+  useEffect(() => {
+    if (Math.random() < 0.5) {
+      document.body.classList.add("green");
+      setGreenTheme(true);
+    }
+  }, []);
+
   return (
     <div className="App">
-      <Logo className="background-logo" fill="#FFCFD0" />
+      <Logo className="background-logo" fill={logoFillLight} />
       <Container>
-        <MobileNav navItemClickHandler={navItemClickHandler} />
+        <MobileNav
+          navItemClickHandler={navItemClickHandler}
+          logoFill={logoFillDark}
+        />
         <h1 onClick={() => setVisbleProducts(allProducts)}>
           HONEY FUCKING DIJON
         </h1>
@@ -36,11 +50,12 @@ function App() {
           <Col lg={3} className="sidebar">
             <ul>
               <li onClick={() => setVisbleProducts(tees)}>FUCKING T-SHIRTS</li>
-              <li onClick={() => setVisbleProducts(sweats)}>
-                FUCKING SWEATS
+              <li onClick={() => setVisbleProducts(sweats)}>FUCKING SWEATS</li>
+              <li onClick={() => setVisbleProducts(jackets)}>
+                FUCKING JACKETS
               </li>
-              <li onClick={() => setVisbleProducts(hoodies)}>
-                FUCKING HOODIES
+              <li onClick={() => setVisbleProducts(jewellery)}>
+                FUCKING JEWELLERY
               </li>
               <li onClick={() => setVisbleProducts(otherShit)}>
                 FUCKING OTHER SHIT

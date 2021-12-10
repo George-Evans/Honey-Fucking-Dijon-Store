@@ -12,6 +12,42 @@ body {
   }
 }
 
+.green {
+  .dark-background {
+    background-color: #6be6a9;
+  }
+
+  &.dark-background {
+    background-color: #6be6a9;
+  }
+
+  .light-background {
+    background-color: #ebf5db;
+  }
+
+  .light-text {
+    .btn-primary {
+      color: #ebf5db;
+    }
+  }
+
+  .StoreDropdown {
+    &.show > .btn-primary.dropdown-toggle {
+      color: #ebf5db;
+    }
+
+    .dropdown-menu {
+      background-color: #ebf5db;
+    }
+
+    .dropdown-item {
+      &:hover {
+        background-color: #6be6a9;
+      }
+    }
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

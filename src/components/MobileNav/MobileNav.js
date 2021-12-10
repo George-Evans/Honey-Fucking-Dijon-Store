@@ -4,14 +4,15 @@ import Logo from "../../assets/images/Logo.js";
 import {
   tees,
   sweats,
-  hoodies,
+  jackets,
+  jewellery,
   otherShit,
   allProducts,
 } from "../../assets/products";
 
 import "./MobileNav.scss";
 
-function MobileNav({ navItemClickHandler }) {
+function MobileNav({ navItemClickHandler, logoFill }) {
   function hamburgerToggle(inputIsChecked) {
     inputIsChecked ? lockBodyScrolling() : unlockBodyScrolling();
   }
@@ -45,7 +46,10 @@ function MobileNav({ navItemClickHandler }) {
       </label>
 
       <nav className="mobile-nav">
-        <Logo className="background-logo nav" fill="#fbafa6" />
+        <Logo
+          className="background-logo nav light-background"
+          fill={logoFill}
+        />
         <Container>
           <h2 onClick={() => onNavItemClick(allProducts)}>
             HONEY FUCKING DIJON
@@ -53,7 +57,8 @@ function MobileNav({ navItemClickHandler }) {
           <ul>
             <li onClick={() => onNavItemClick(tees)}>FUCKING T-SHIRTS</li>
             <li onClick={() => onNavItemClick(sweats)}>FUCKING SWEATS</li>
-            <li onClick={() => onNavItemClick(hoodies)}>FUCKING T-HOODIES</li>
+            <li onClick={() => onNavItemClick(jackets)}>FUCKING JACKETS</li>
+            <li onClick={() => onNavItemClick(jewellery)}>FUCKING JEWELLERY</li>
             <li onClick={() => onNavItemClick(otherShit)}>
               FUCKING OTHER SHIT
             </li>

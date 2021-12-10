@@ -7,7 +7,7 @@ import "./StoreDropdown.scss";
 function StoreDropdown({ links, buyInStore }) {
   const buyText = buyInStore ? "BUY IN STORE" : "BUY";
   return (
-    <DropdownButton title={buyText} className="StoreDropdown">
+    <DropdownButton title={buyText} className="StoreDropdown light-text">
       {links.map((link, i) => (
         <Dropdown.Item
           href={link.src}
