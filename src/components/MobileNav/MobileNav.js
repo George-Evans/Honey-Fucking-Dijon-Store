@@ -4,10 +4,15 @@ import Logo from "../../assets/images/Logo.js";
 import {
   tees,
   sweats,
+  hoodies,
+  shirts,
+  pants,
   jackets,
+  hats,
   jewellery,
   otherShit,
-  allProducts,
+  hfd004,
+  hfd005,
 } from "../../assets/products";
 
 import "./MobileNav.scss";
@@ -51,17 +56,22 @@ function MobileNav({ navItemClickHandler, logoFill }) {
           fill={logoFill}
         />
         <Container>
-          <h2 onClick={() => onNavItemClick(allProducts)}>
-            HONEY FUCKING DIJON
-          </h2>
+          <h2 onClick={() => onNavItemClick(hfd005)}>HONEY FUCKING DIJON</h2>
           <ul>
             <li onClick={() => onNavItemClick(tees)}>FUCKING T-SHIRTS</li>
             <li onClick={() => onNavItemClick(sweats)}>FUCKING SWEATS</li>
+            <li onClick={() => onNavItemClick(hoodies)}>FUCKING HOODIES</li>
+            <li onClick={() => onNavItemClick(pants)}>FUCKING PANTS</li>
             <li onClick={() => onNavItemClick(jackets)}>FUCKING JACKETS</li>
+            <li onClick={() => onNavItemClick(hats)}>FUCKING HATS</li>
             <li onClick={() => onNavItemClick(jewellery)}>FUCKING JEWELLERY</li>
             <li onClick={() => onNavItemClick(otherShit)}>
               FUCKING OTHER SHIT
             </li>
+          </ul>
+          <ul>
+            <li onClick={() => onNavItemClick(hfd005)}>HFD005</li>
+            <li onClick={() => onNavItemClick(hfd004)}>HFD004</li>
           </ul>
           <div>DOVER STREET MARKET</div>
           <div>COMME des GARÇONS</div>

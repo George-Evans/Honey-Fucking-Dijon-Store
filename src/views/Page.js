@@ -7,16 +7,21 @@ import Product from "../components/Product/Product";
 import {
   tees,
   sweats,
+  hoodies,
+  shirts,
+  pants,
   jackets,
+  hats,
   jewellery,
   otherShit,
-  allProducts,
+  hfd004,
+  hfd005,
 } from "../assets/products";
 import Logo from "../assets/images/Logo.js";
 import MobileNav from "../components/MobileNav/MobileNav";
 
 function App() {
-  const [visibleProducts, setVisbleProducts] = useState(allProducts);
+  const [visibleProducts, setVisbleProducts] = useState(hfd005);
   const [greenTheme, setGreenTheme] = useState(false);
   const logoFillLight = greenTheme ? "#ebf5db" : "#FFCFD0";
   const logoFillDark = greenTheme ? "#6be6a9" : "#fbafa6";
@@ -40,9 +45,7 @@ function App() {
           navItemClickHandler={navItemClickHandler}
           logoFill={logoFillDark}
         />
-        <h1 onClick={() => setVisbleProducts(allProducts)}>
-          HONEY FUCKING DIJON
-        </h1>
+        <h1 onClick={() => setVisbleProducts(hfd004)}>HONEY FUCKING DIJON</h1>
       </Container>
 
       <Container>
@@ -51,15 +54,25 @@ function App() {
             <ul>
               <li onClick={() => setVisbleProducts(tees)}>FUCKING T-SHIRTS</li>
               <li onClick={() => setVisbleProducts(sweats)}>FUCKING SWEATS</li>
+              <li onClick={() => setVisbleProducts(hoodies)}>
+                FUCKING HOODIES
+              </li>
+              <li onClick={() => setVisbleProducts(shirts)}>FUCKING SHIRTS</li>
+              <li onClick={() => setVisbleProducts(pants)}>FUCKING PANTS</li>
               <li onClick={() => setVisbleProducts(jackets)}>
                 FUCKING JACKETS
               </li>
+              <li onClick={() => setVisbleProducts(hats)}>FUCKING HATS</li>
               <li onClick={() => setVisbleProducts(jewellery)}>
                 FUCKING JEWELLERY
               </li>
               <li onClick={() => setVisbleProducts(otherShit)}>
                 FUCKING OTHER SHIT
               </li>
+            </ul>
+            <ul>
+              <li onClick={() => setVisbleProducts(hfd005)}>HFD005</li>
+              <li onClick={() => setVisbleProducts(hfd004)}>HFD004</li>
             </ul>
             <div>DOVER STREET MARKET</div>
             <div>COMME des GARÇONS</div>

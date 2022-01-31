@@ -40,7 +40,6 @@ h2 {
   letter-spacing: -0.02em;
 
   @include media-breakpoint-up(lg) {
-    text-align: center;
     font-size: 85px;
   }
 
